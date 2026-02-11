@@ -8,5 +8,11 @@ To monitor your dingodb-cluser, just complete following steps:
       
       */30 * * * * flock -n /tmp/dingo_mon.lock /home/dingo-store/dingo-store/build/bin/run_mon.sh "300" "true" >> /home/dingo-store/dingo-store/build/bin/region_monitor.log
    3) run the monitor script directly:
-      a. no arguments like: ./run_mon.sh           (this will sleep 300 seconds between two monitor loop by default)
-      b. one arguments like: ./run_mon.sh 600      (this will sleep 600 seconds between two monitor loop;)       
+      
+      a. no arguments like: ./run_mon.sh
+
+      (this will sleep 300 seconds between two monitor loop by default)
+
+      b. one arguments like: ./run_mon.sh 600
+
+      (this will sleep 600 seconds between two monitor loop;)       
